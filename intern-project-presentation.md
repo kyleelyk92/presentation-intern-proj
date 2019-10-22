@@ -4,7 +4,7 @@
 
 # 2. <b><span style="color:orange">Code first design </b>
 
--All classes and relationships were the first thing we set up
+-All classes and relationships were the first thing we set up<br>
 -Everyone is an application user, extending the applicationuser class
 
 it goes like this
@@ -37,7 +37,10 @@ All of the unused fields that exist in some child classes, but not in others, wi
 
 ---
 
-this is the function that I didn't want to rewrite or extend
+ApplicationUser has a bunch of stuff that's shared with all of the children; FirstName, LastName, etc.
+
+It also has this function that I didn't want to rewrite or extend
+
 ![alt text](applicationuser-generateuserid.png "this is the function that I didn't want to rewrite or extend")
 
 ### 3. <b><span style="color:cyan">Seed method and making sure that all login functionality was working</b>
